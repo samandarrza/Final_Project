@@ -76,10 +76,10 @@ height: 500px;
     top: 0;
     opacity: 0;
 }
-.product-image:hover, .cart-action:hover{   
+/* .product-image:hover, .cart-action:hover{   
     opacity: 1;
     
-}
+} */
 
 .label-block{
     position: absolute;
@@ -95,9 +95,20 @@ height: 500px;
     justify-content: center;
     top: 80%;
     opacity: 0;
+    top: 85%;
+    transition: .5s;
 }
 .cart-action a{
     text-align: center;
     text-decoration: none;
     margin-right: 15px;
+}
+
+.content:hover .product-image {
+    opacity: 1;
+}
+
+.content:hover .cart-action {
+    opacity: 1;
+    top: 80%;
 }
