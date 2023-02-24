@@ -70,48 +70,77 @@ height: 500px;
 
 .content{
     position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+.product-hover-action{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
 .product-image{
     position: absolute;
     top: 0;
     opacity: 0;
 }
-/* .product-image:hover, .cart-action:hover{   
-    opacity: 1;
-    
-} */
 
+.product-content-image{
+    position: relative;
+}
+.product-content-image img{
+    width: 100%;
+}
 .label-block{
     position: absolute;
     top: 0;
-    right: 20%;
-    background-color: blue;
+    right: 0;
     color: white;
+    background-color: rgb(47, 47, 184);
+    border-radius: 0px 15px 0px 5px;
+    padding: 0.3rem;
 }
-.cart-action{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 80%;
-    opacity: 0;
-    top: 85%;
-    transition: .5s;
-}
-.cart-action a{
-    text-align: center;
-    text-decoration: none;
-    margin-right: 15px;
-}
+
+
+
+
+
+
+
 
 .content:hover .product-image {
     opacity: 1;
 }
-
-.content:hover .cart-action {
+.content:hover .product-hover-action {
     opacity: 1;
-    top: 80%;
+    overflow: visible;
+    bottom: 5%;
 }
 .slick-prev:before, .slick-next:before{
     color: black;
+}
+.product-content .title a{
+    text-decoration: none;
+    color: black;
+}
+.product-content .title a:hover{
+    text-decoration: none;
+    color: blue;
+}
+.product-rating i{
+    color: rgb(192, 205, 50);
+    
+}
+
+.product-one{
+    text-align: center;
 }
