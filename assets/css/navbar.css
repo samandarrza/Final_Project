@@ -75,6 +75,7 @@
     }
     .mobile-menu.active{
         padding-bottom: 1rem;
+        z-index: 1;
         height: auto;
     }
     .mobile-menu.active span{
