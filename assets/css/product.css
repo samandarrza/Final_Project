@@ -96,7 +96,7 @@
     background-color: white;
 }
 .table-responsive th{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .comment{
@@ -125,4 +125,39 @@
 }
 .product-commnet-area h5{
     padding: 1rem;
+}
+
+.comment-respond{
+    padding: 1rem;
+    margin: 1rem;
+}
+.form-group{
+    padding-top: 1rem;
+}
+.rating-product i, .commenter-rating i{
+    color: rgb(205, 202, 50);
+}
+.form-submit button{
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+.form-group textarea{
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 0.2rem;
+    border: 1px solid rgb(236, 230, 230);
+}
+
+.form-group input{
+    width: 100%;
+    border: 1px solid rgb(236, 230, 230);
+    min-height: 40px;
+}
+
+.single-product-thumbnail img{
+    position: absolute;
+    top: 0;
+    width: 20%;
 }

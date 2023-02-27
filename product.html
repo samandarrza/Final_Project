@@ -10,7 +10,8 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/shop.css">
-
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/product.css">
 </head>
 
@@ -26,8 +27,58 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-image">
-                                <img src="assets/images/product-38.png" alt="">
-
+                                <div class="row">
+                                    <div class="col-lg-10 order-lg-2">
+                                        <div class="single-product-thumbnail-wrap zoom-gallery">
+                                            <div class="single-product-thumbnail product-large-thumbnail-3 new-product">
+                                                <div class="thumbnail">
+                                                    <a href="assets/images/product-big-01.png" class="popup-zoom">
+                                                        <img src="assets/images/product-big-01.png" alt="Product Images">
+                                                    </a>
+                                                </div>
+                                                <div class="thumbnail">
+                                                    <a href="assets/images/product-big-02.png" class="popup-zoom">
+                                                        <img src="assets/images/product-big-02.png" alt="Product Images">
+                                                    </a>
+                                                </div>
+                                                <div class="thumbnail">
+                                                    <a href="assets/images/product-big-03.png" class="popup-zoom">
+                                                        <img src="assets/images/product-big-03.png" alt="Product Images">
+                                                    </a>
+                                                </div>
+                                                <div class="thumbnail">
+                                                    <a href="assets/images/product-big-02.png" class="popup-zoom">
+                                                        <img src="assets/images/product-big-02.png" alt="Product Images">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="label-block">
+                                                <div class="product-badget">20% OFF</div>
+                                            </div>
+                                            <div class="product-quick-view position-view">
+                                                <a href="assets/images/product-big-01.png" class="popup-zoom">
+                                                    <i class="far fa-search-plus"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 order-lg-1">
+                                        <div class="product-small-thumb-3 small-thumb-wrapper">
+                                            <div class="small-thumb-img">
+                                                <img src="assets/images/thumb-08.png" alt="thumb image">
+                                            </div>
+                                            <div class="small-thumb-img">
+                                                <img src="assets/images/thumb-07.png" alt="thumb image">
+                                            </div>
+                                            <div class="small-thumb-img">
+                                                <img src="assets/images/thumb-09.png" alt="thumb image">
+                                            </div>
+                                            <div class="small-thumb-img">
+                                                <img src="assets/images/thumb-07.png" alt="thumb image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -334,7 +385,7 @@
                                                 <h5 class="title mb--30">Add a Review</h5>
                                                 <p>Your email address will not be published. Required fields are marked
                                                     *</p>
-                                                <div class="rating-wrapper d-flex-center mb--40">
+                                                <div class="rating-product d-flex-center mb--40">
                                                     Your Rating <span class="require">*</span>
                                                     <div class="reating-inner ml--20">
                                                         <i class="las la-star"></i>
@@ -347,13 +398,6 @@
 
                                                 <form action="#">
                                                     <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label>Other Notes (optional)</label>
-                                                                <textarea name="message"
-                                                                    placeholder="Your Comment"></textarea>
-                                                            </div>
-                                                        </div>
                                                         <div class="col-lg-6 col-md-6 col-12">
                                                             <div class="form-group">
                                                                 <label>Name <span class="require">*</span></label>
@@ -366,10 +410,18 @@
                                                                 <input id="email" type="email">
                                                             </div>
                                                         </div>
+                                                        <div class="col-lg-12 col-md-12 col-12">
+                                                            <div class="form-group">
+                                                                <label>Other Notes (optional)</label>
+                                                                <textarea name="message"
+                                                                    placeholder="Your Comment"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        
                                                         <div class="col-lg-12">
                                                             <div class="form-submit">
                                                                 <button type="submit" id="submit"
-                                                                    class="new-btn btn-bg-primary w-auto">Submit
+                                                                    class="btn btn-primary">Submit
                                                                     Comment</button>
                                                             </div>
                                                         </div>
@@ -397,5 +449,7 @@
 
 </body>
 <script src="assets/js/bootstrap502.js"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
 </html>
