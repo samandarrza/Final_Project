@@ -134,7 +134,7 @@
 .form-group{
     padding-top: 1rem;
 }
-.rating-product i, .commenter-rating i{
+.rating-product i, .commenter-rating i, .product-icon i{
     color: rgb(205, 202, 50);
 }
 .form-submit button{
@@ -160,4 +160,64 @@
     position: absolute;
     top: 0;
     width: 20%;
+}
+.product-image{
+    margin: 1rem;
+}
+.slider-for img{
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.slider-nav img{
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid transparent;
+
+}
+.slider-nav img:hover{
+    border: 2px solid rgb(167, 167, 244);
+}
+.product-info{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.product-cart input{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.btn-min, .btn-max{
+
+    width: 30px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.review-username{
+    text-decoration: none;
+    color: black;
+}
+.review-time{
+    color: black;
+    border: 1px solid rgb(223, 220, 220);
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.review-time:hover{
+    color: rgb(63, 99, 208);
+    cursor: pointer;
+}
+.commenter{
+    align-items: center;
 }
