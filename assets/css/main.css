@@ -172,3 +172,50 @@
     padding: 0.5rem;
     margin: 0.5rem;
 }
+
+.service-area, .newsletter, .review-main{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.service-box{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.etrade-newsletter{
+    background-image: url(../images/bg-image-5.jpg); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center;
+    padding: 100px 107px 85px;
+    border-radius: 6px;
+}
+.etrade-newsletter input{
+    padding-left: 10px;
+    height: 40px;
+    width: 390px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 10px 0 0 10px;
+}
+input:is(:focus){
+    border-color: rgb(151, 151, 196);
+}
+
+@media (max-width: 900px) {
+    .etrade-newsletter{
+        background-size: 180%;
+        padding: 5rem;
+        border-radius: 20px;
+    }
+    .etrade-newsletter input{
+        width: 100%;
+        border-radius: 6px;
+    }
+    .etrade-newsletter .btn{
+        margin: 1rem;
+        border-radius: 6px;
+    }
+  }

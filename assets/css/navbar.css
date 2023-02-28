@@ -14,8 +14,8 @@
 .nav-fixed{
     position: fixed;
     margin: auto;
-    z-index: 99999;
-    width: 100%;
+    z-index: 9;
+    width: 98%;
 }
 .mobile{
     display: none;
@@ -58,12 +58,12 @@
     }
    
     .navbar{
-        margin-left: 1rem;
-        margin-right: 1rem; 
+        
         position: relative;
     }
     .menu span{
         margin-right: 1rem;
+        
     }
     .mobile-menu{
         display: block;
