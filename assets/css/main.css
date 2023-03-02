@@ -367,3 +367,32 @@ a{
     text-align: center;
     align-items: center;
 }
+
+.cart-item{
+    display: flex;
+    padding: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+.cart-item img{
+    width: 100%;
+    padding: 0.5rem;
+}
+.item-img{
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    left: 0;
+    border: 1px solid silver;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.close-btn:hover{
+    border: 1px solid blue;
+}
+
+.item-content .rating-number{
+    font-size: 0.8rem;
+}

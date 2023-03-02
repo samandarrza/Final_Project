@@ -17,37 +17,105 @@
 </head>
 
 <body>
-    <header class="bg-navbar">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="">
-            </div>
-            <div class="menu">
-                <a href=""><span class="menu-button active">Home</span></a>
-                <a href=""><span class="menu-button">Shop</span></a>
-                <a href=""><span class="menu-button">Blog</span></a>
-                <a href=""><span class="menu-button">Contact</span></a>
-                <a href=""><span class="menu-button">About</span></a>
-            </div>
-            <div class="icon">             
-                <a href=""><i class="las la-search"></i></a>
-                <a href=""><i class="las la-heart"></i></a>
-                <a href=""><i class="las la-shopping-cart"></i></a>
-                <a href=""><i class="las la-user"></i></a>
-            </div>
-            <div class="mobile">
-            <span><i class="las la-bars"></i></span>   
-            </div>
-            <div class="mobile-menu">
-                <a href=""><span class="menu-button">Home</span></a>
-                <a href=""><span class="menu-button">Shop</span></a>
-                <a href=""><span class="menu-button">Blog</span></a>
-                <a href=""><span class="menu-button">Contact</span></a>
-                <a href=""><span class="menu-button">About</span></a>
-            </div> 
+  <header class="bg-navbar">
+    <div class="">
+      <div class="nav-fixed">
+        <nav class="navbar container">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+          </div>
+          <div class="menu">
+            <a href=""><span class="menu-button active">Home</span></a>
+            <a href=""><span class="menu-button">Shop</span></a>
+            <a href=""><span class="menu-button">Blog</span></a>
+            <a href=""><span class="menu-button">Contact</span></a>
+            <a href=""><span class="menu-button">About</span></a>
+          </div>
+          <div class="icon">
+            <a href=""><i class="las la-search"></i></a>
+            <a href=""><i class="las la-heart"></i></a>
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#addtocart" aria-controls="addtocart"><i
+                class="las la-shopping-cart"></i></a>
+            <a href=""><i class="las la-user"></i></a>
+          </div>
+          <div class="mobile">
+            <span><i class="las la-bars"></i></span>
+          </div>
+          <div class="mobile-menu">
+            <a href=""><span class="menu-button">Home</span></a>
+            <a href=""><span class="menu-button">Shop</span></a>
+            <a href=""><span class="menu-button">Blog</span></a>
+            <a href=""><span class="menu-button">Contact</span></a>
+            <a href=""><span class="menu-button">About</span></a>
+          </div>
         </nav>
+      </div>
+    </div>
 
-    </header>
+    <div class="shopping-cart-modal">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="addtocart" aria-labelledby="addtocartLabel">
+        <div class="offcanvas-header">
+          <div class="addtocartLabel">
+            <h2 class="header-title">Cart review</h2>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart-item">
+            <div class="item-img">
+              <a href="#"><img src="assets/images/product-01.png" alt="Cart Product"></a>
+              <button class="close-btn"><i class="las la-times"></i></button>
+            </div>
+            <div class="item-content">
+              <div class="product-rating">
+                <span class="product-icon">
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+
+                  
+                </span>
+                <span class="rating-number">(64)</span>
+              </div>
+              <h6 class="item-title"><a href="#">Wireless PS Handler</a></h6>
+              <div class="item-price"><span class="currency-symbol">$</span>155.00</div>
+              <div class="pro-qty item-quantity">
+                <input type="number" class="quantity-input" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-img">
+              <a href="#"><img src="assets/images/product-01.png" alt="Cart Product"></a>
+              <button class="close-btn"><i class="las la-times"></i></button>
+            </div>
+            <div class="item-content">
+              <div class="product-rating">
+                <span class="product-icon">
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+                  <i class="las la-star"></i>
+
+                  
+                </span>
+                <span class="rating-number">(64)</span>
+              </div>
+              <h6 class="item-title"><a href="#">Wireless PS Handler</a></h6>
+              <div class="item-price"><span class="currency-symbol">$</span>155.00</div>
+              <div class="pro-qty item-quantity">
+                <input type="number" class="quantity-input" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
     <div class="breadcrumb-area">
         <div class="container">
             <div class="row align-items-center">
@@ -1040,12 +1108,7 @@
         </div>
     </section>
 </body>
-<script>
-    hamburger = document.querySelector(".mobile");
-    hamburger.onclick = function () {
-        navbar = document.querySelector(".mobile-menu");
-        navbar.classList.toggle("active");
-    }
+<script src="assets/js/main.js"></script>
 
-    </script>
+<script src="assets/js/bootstrap502.js"></script>
 </html>

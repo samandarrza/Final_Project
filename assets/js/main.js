@@ -1,3 +1,31 @@
+const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
+
+    let a = 1;
+
+    plus.addEventListener("click", ()=>{
+      a++;
+      a = (a < 10) ? "0" + a : a;
+      num.innerText = a;
+    });
+
+    minus.addEventListener("click", ()=>{
+      if(a > 1){
+        a--;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+      }
+    });
+
+
+
+hamburger = document.querySelector(".mobile");
+hamburger.onclick = function () {
+    navbar = document.querySelector(".mobile-menu");
+    navbar.classList.toggle("active");
+}
+
 $('.main_slider').slick({
   arrows: false,
   dots: false,
@@ -174,8 +202,3 @@ $('.main_slider').slick({
     focusOnSelect: true
   });
 
-  hamburger = document.querySelector(".mobile");
-    hamburger.onclick = function () {
-        navbar = document.querySelector(".mobile-menu");
-        navbar.classList.toggle("active");
-    }
