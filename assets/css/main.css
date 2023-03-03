@@ -431,3 +431,64 @@ body{
     margin: 1rem;
     min-height: 50vh;
 }
+.checkout-area{
+    padding: 1rem;
+}
+.form-group{
+padding: 0.3rem;
+}
+
+#Region{
+    width: 100%;
+}
+.amount, .order-shipping label{
+    padding-left: 1rem;
+}
+
+.form-group textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid silver;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+}
+.form-group input{
+    width: 100%;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+}
+
+textarea:is(:focus){
+    border-color: rgb(151, 151, 196);
+}
+input:is(:focus){
+    border-color: rgb(151, 151, 196);
+}
+
+.amount, .order-product td, .order-total-amount{
+    font-weight: bold;
+}
+.order-summery{
+    padding: 1rem;
+}
+
+.newsletter-content i{
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    background-color: rgb(247, 242, 242);
+}
+
+.forget-area{
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(240, 236, 236);
+}
