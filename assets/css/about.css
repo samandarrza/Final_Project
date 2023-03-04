@@ -45,22 +45,6 @@
     width: 100%;
     border-radius: 1rem;
 }
-.about-newsletter-area{
-    width: 100%;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-.bg-image-about {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px;
-    background-image: url(../images/bg-image-5.jpg);
-}
-.newsletter-content{
-    padding: 5rem;
-
-}
 .input-group input{
     padding: 0.5rem;
     width: 100%;

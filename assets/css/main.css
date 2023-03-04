@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -596,4 +598,25 @@ input:is(:focus){
 .modal-product img{
     width: 100%;
     border-radius: 10px;
+}
+
+.error-page{
+    background-color: #fff;
+    padding: 3rem;
+}
+.contact-us, .service-area{
+    padding: 2rem;
+}
+
+.social-share i{
+    color: gray;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: 0.25s ease-in-out;
+}
+.social-share i:hover{
+    color: white;
+    padding: 0.4rem;
+    background-color: #ff497c;
+    border-radius: 50%;
 }
