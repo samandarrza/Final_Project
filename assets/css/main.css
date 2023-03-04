@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
 li{
     list-style-type: none;
 }
@@ -56,6 +62,15 @@ li{
     opacity: 0;
 }
 
+
+.arrival-image{
+    position: relative;
+}
+.arrival-image img{
+    width: 100%;
+    border-radius: 50%;
+
+}
 .product-content-image{
     position: relative;
 }
@@ -491,4 +506,94 @@ input:is(:focus){
     margin: 1rem;
     border-radius: 10px;
     border: 1px solid rgb(240, 236, 236);
+}
+.most-product-list{
+    position: relative;
+    border: 1px solid  rgb(240, 236, 236);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+}
+.product-content{
+    padding: 1rem;
+}
+.most-product-list{
+    display: flex;
+}
+.most-images img{
+    width: 100%;
+    border-radius: 10px;
+}
+.product-cart{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    top: 20%;
+}
+
+.most-product-list:hover{
+    outline: 1px solid rgb(214, 208, 208);
+}
+.product-cart .btn{
+    border: 1px solid rgb(214, 208, 208);
+}
+.product-cart a{
+    margin: 0.5rem;
+
+}
+.product-area{
+    border: 1px solid  rgb(240, 236, 236);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.most-title i, .explore-title i, .this-title i{
+    background-color: #8C71DB;
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.most-title{
+    text-align: center;
+}
+
+.product-price .current-price{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .most-product-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-cart{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.color-btn{
+    background-color: #ff497c;
+    color: #fff;
+}
+.color-white-btn{
+    background-color: #fff;
+    color: black;
+}
+.modal-product{
+    display: flex;
+    justify-content: center;
+}
+.modal-image{
+    width: 50%;
+}
+.modal-product img{
+    width: 100%;
+    border-radius: 10px;
 }
